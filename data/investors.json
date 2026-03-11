@@ -1,0 +1,315 @@
+[
+    {
+        "id": 1,
+        "name": "Ana Silva",
+        "age": 23,
+        "monthlyIncome": 3500,
+        "knowledgeLevel": "nunca_investiu",
+        "lossTolerancy": "nenhuma",
+        "riskProfile": "conservador",
+        "investmentHorizon": "curto",
+        "objectives": ["reserva_emergencia"],
+        "investments": [
+            { "id": 13, "name": "Poupança", "type": "tesouro", "expectedReturn": 7.4 },
+            { "id": 1, "name": "Tesouro Selic 2029", "type": "tesouro", "expectedReturn": 13.25 }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Bruno Costa",
+        "age": 28,
+        "monthlyIncome": 5200,
+        "knowledgeLevel": "basico",
+        "lossTolerancy": "baixa",
+        "riskProfile": "moderado",
+        "investmentHorizon": "medio",
+        "objectives": ["reserva_emergencia", "viagem"],
+        "investments": [
+            { "id": 3, "name": "CDB Banco Inter 110% CDI", "type": "cdb", "expectedReturn": 12.1 },
+            { "id": 5, "name": "LCI Banco do Brasil 95% CDI", "type": "lci", "expectedReturn": 10.45 },
+            { "id": 1, "name": "Tesouro Selic 2029", "type": "tesouro", "expectedReturn": 13.25 }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Carla Mendes",
+        "age": 35,
+        "monthlyIncome": 8500,
+        "knowledgeLevel": "intermediario",
+        "lossTolerancy": "media",
+        "riskProfile": "arrojado",
+        "investmentHorizon": "longo",
+        "objectives": ["aposentadoria", "renda_extra"],
+        "investments": [
+            { "id": 2, "name": "Tesouro IPCA+ 2035", "type": "tesouro", "expectedReturn": 6.5 },
+            { "id": 8, "name": "Fundo Multimercado Moderado", "type": "fundo", "expectedReturn": 15.0 },
+            { "id": 10, "name": "ETF BOVA11 (Ibovespa)", "type": "acao", "expectedReturn": 18.0 },
+            { "id": 15, "name": "Fundo Imobiliário KNRI11", "type": "fundo", "expectedReturn": 12.0 }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Diego Ferreira",
+        "age": 22,
+        "monthlyIncome": 2800,
+        "knowledgeLevel": "nunca_investiu",
+        "lossTolerancy": "nenhuma",
+        "riskProfile": "conservador",
+        "investmentHorizon": "curto",
+        "objectives": ["reserva_emergencia"],
+        "investments": [
+            { "id": 13, "name": "Poupança", "type": "tesouro", "expectedReturn": 7.4 }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Eduarda Nunes",
+        "age": 30,
+        "monthlyIncome": 6000,
+        "knowledgeLevel": "basico",
+        "lossTolerancy": "baixa",
+        "riskProfile": "moderado",
+        "investmentHorizon": "medio",
+        "objectives": ["casa_propria", "reserva_emergencia"],
+        "investments": [
+            { "id": 1, "name": "Tesouro Selic 2029", "type": "tesouro", "expectedReturn": 13.25 },
+            { "id": 4, "name": "CDB Prefixado 14% a.a.", "type": "cdb", "expectedReturn": 14.0 },
+            { "id": 7, "name": "Fundo DI Simples", "type": "fundo", "expectedReturn": 11.5 }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Felipe Santos",
+        "age": 40,
+        "monthlyIncome": 12000,
+        "knowledgeLevel": "intermediario",
+        "lossTolerancy": "media",
+        "riskProfile": "arrojado",
+        "investmentHorizon": "longo",
+        "objectives": ["aposentadoria", "renda_extra"],
+        "investments": [
+            { "id": 2, "name": "Tesouro IPCA+ 2035", "type": "tesouro", "expectedReturn": 6.5 },
+            { "id": 11, "name": "Ações Petrobras (PETR4)", "type": "acao", "expectedReturn": 25.0 },
+            { "id": 12, "name": "Ações Itaú (ITUB4)", "type": "acao", "expectedReturn": 20.0 },
+            { "id": 9, "name": "Fundo de Ações Growth", "type": "fundo", "expectedReturn": 22.0 }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Gabriela Lima",
+        "age": 26,
+        "monthlyIncome": 4200,
+        "knowledgeLevel": "nunca_investiu",
+        "lossTolerancy": "nenhuma",
+        "riskProfile": "conservador",
+        "investmentHorizon": "curto",
+        "objectives": ["viagem", "reserva_emergencia"],
+        "investments": [
+            { "id": 13, "name": "Poupança", "type": "tesouro", "expectedReturn": 7.4 },
+            { "id": 7, "name": "Fundo DI Simples", "type": "fundo", "expectedReturn": 11.5 }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Henrique Almeida",
+        "age": 33,
+        "monthlyIncome": 7500,
+        "knowledgeLevel": "basico",
+        "lossTolerancy": "baixa",
+        "riskProfile": "moderado",
+        "investmentHorizon": "medio",
+        "objectives": ["casa_propria"],
+        "investments": [
+            { "id": 3, "name": "CDB Banco Inter 110% CDI", "type": "cdb", "expectedReturn": 12.1 },
+            { "id": 6, "name": "LCA Banco Safra 97% CDI", "type": "lca", "expectedReturn": 10.67 },
+            { "id": 16, "name": "Tesouro Prefixado 2027", "type": "tesouro", "expectedReturn": 13.8 }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Isabela Rodrigues",
+        "age": 45,
+        "monthlyIncome": 15000,
+        "knowledgeLevel": "intermediario",
+        "lossTolerancy": "media",
+        "riskProfile": "arrojado",
+        "investmentHorizon": "longo",
+        "objectives": ["aposentadoria", "renda_extra"],
+        "investments": [
+            { "id": 10, "name": "ETF BOVA11 (Ibovespa)", "type": "acao", "expectedReturn": 18.0 },
+            { "id": 15, "name": "Fundo Imobiliário KNRI11", "type": "fundo", "expectedReturn": 12.0 },
+            { "id": 8, "name": "Fundo Multimercado Moderado", "type": "fundo", "expectedReturn": 15.0 },
+            { "id": 2, "name": "Tesouro IPCA+ 2035", "type": "tesouro", "expectedReturn": 6.5 }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "João Oliveira",
+        "age": 19,
+        "monthlyIncome": 1800,
+        "knowledgeLevel": "nunca_investiu",
+        "lossTolerancy": "nenhuma",
+        "riskProfile": "conservador",
+        "investmentHorizon": "curto",
+        "objectives": ["reserva_emergencia"],
+        "investments": [
+            { "id": 13, "name": "Poupança", "type": "tesouro", "expectedReturn": 7.4 }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Karen Souza",
+        "age": 31,
+        "monthlyIncome": 6800,
+        "knowledgeLevel": "basico",
+        "lossTolerancy": "baixa",
+        "riskProfile": "moderado",
+        "investmentHorizon": "medio",
+        "objectives": ["viagem", "renda_extra"],
+        "investments": [
+            { "id": 5, "name": "LCI Banco do Brasil 95% CDI", "type": "lci", "expectedReturn": 10.45 },
+            { "id": 14, "name": "CDB Liquidez 120% CDI", "type": "cdb", "expectedReturn": 13.2 }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Lucas Pereira",
+        "age": 27,
+        "monthlyIncome": 4800,
+        "knowledgeLevel": "basico",
+        "lossTolerancy": "baixa",
+        "riskProfile": "moderado",
+        "investmentHorizon": "medio",
+        "objectives": ["reserva_emergencia", "casa_propria"],
+        "investments": [
+            { "id": 1, "name": "Tesouro Selic 2029", "type": "tesouro", "expectedReturn": 13.25 },
+            { "id": 3, "name": "CDB Banco Inter 110% CDI", "type": "cdb", "expectedReturn": 12.1 }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Marina Campos",
+        "age": 38,
+        "monthlyIncome": 10000,
+        "knowledgeLevel": "intermediario",
+        "lossTolerancy": "media",
+        "riskProfile": "arrojado",
+        "investmentHorizon": "longo",
+        "objectives": ["aposentadoria", "renda_extra"],
+        "investments": [
+            { "id": 9, "name": "Fundo de Ações Growth", "type": "fundo", "expectedReturn": 22.0 },
+            { "id": 11, "name": "Ações Petrobras (PETR4)", "type": "acao", "expectedReturn": 25.0 },
+            { "id": 15, "name": "Fundo Imobiliário KNRI11", "type": "fundo", "expectedReturn": 12.0 }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Nicolas Ribeiro",
+        "age": 24,
+        "monthlyIncome": 3200,
+        "knowledgeLevel": "nunca_investiu",
+        "lossTolerancy": "nenhuma",
+        "riskProfile": "conservador",
+        "investmentHorizon": "curto",
+        "objectives": ["reserva_emergencia", "viagem"],
+        "investments": [
+            { "id": 7, "name": "Fundo DI Simples", "type": "fundo", "expectedReturn": 11.5 },
+            { "id": 13, "name": "Poupança", "type": "tesouro", "expectedReturn": 7.4 }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Olivia Martins",
+        "age": 50,
+        "monthlyIncome": 18000,
+        "knowledgeLevel": "intermediario",
+        "lossTolerancy": "media",
+        "riskProfile": "moderado",
+        "investmentHorizon": "longo",
+        "objectives": ["aposentadoria"],
+        "investments": [
+            { "id": 2, "name": "Tesouro IPCA+ 2035", "type": "tesouro", "expectedReturn": 6.5 },
+            { "id": 4, "name": "CDB Prefixado 14% a.a.", "type": "cdb", "expectedReturn": 14.0 },
+            { "id": 10, "name": "ETF BOVA11 (Ibovespa)", "type": "acao", "expectedReturn": 18.0 }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Pedro Gomes",
+        "age": 29,
+        "monthlyIncome": 5500,
+        "knowledgeLevel": "basico",
+        "lossTolerancy": "baixa",
+        "riskProfile": "moderado",
+        "investmentHorizon": "medio",
+        "objectives": ["casa_propria", "reserva_emergencia"],
+        "investments": [
+            { "id": 6, "name": "LCA Banco Safra 97% CDI", "type": "lca", "expectedReturn": 10.67 },
+            { "id": 1, "name": "Tesouro Selic 2029", "type": "tesouro", "expectedReturn": 13.25 },
+            { "id": 7, "name": "Fundo DI Simples", "type": "fundo", "expectedReturn": 11.5 }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Rafaela Barbosa",
+        "age": 21,
+        "monthlyIncome": 2200,
+        "knowledgeLevel": "nunca_investiu",
+        "lossTolerancy": "nenhuma",
+        "riskProfile": "conservador",
+        "investmentHorizon": "curto",
+        "objectives": ["reserva_emergencia"],
+        "investments": [
+            { "id": 13, "name": "Poupança", "type": "tesouro", "expectedReturn": 7.4 }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Samuel Araujo",
+        "age": 34,
+        "monthlyIncome": 9000,
+        "knowledgeLevel": "intermediario",
+        "lossTolerancy": "media",
+        "riskProfile": "arrojado",
+        "investmentHorizon": "longo",
+        "objectives": ["renda_extra", "aposentadoria"],
+        "investments": [
+            { "id": 12, "name": "Ações Itaú (ITUB4)", "type": "acao", "expectedReturn": 20.0 },
+            { "id": 8, "name": "Fundo Multimercado Moderado", "type": "fundo", "expectedReturn": 15.0 },
+            { "id": 2, "name": "Tesouro IPCA+ 2035", "type": "tesouro", "expectedReturn": 6.5 }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Tatiana Dias",
+        "age": 42,
+        "monthlyIncome": 11000,
+        "knowledgeLevel": "basico",
+        "lossTolerancy": "baixa",
+        "riskProfile": "moderado",
+        "investmentHorizon": "medio",
+        "objectives": ["aposentadoria", "reserva_emergencia"],
+        "investments": [
+            { "id": 1, "name": "Tesouro Selic 2029", "type": "tesouro", "expectedReturn": 13.25 },
+            { "id": 5, "name": "LCI Banco do Brasil 95% CDI", "type": "lci", "expectedReturn": 10.45 },
+            { "id": 4, "name": "CDB Prefixado 14% a.a.", "type": "cdb", "expectedReturn": 14.0 }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Ulisses Franco",
+        "age": 55,
+        "monthlyIncome": 20000,
+        "knowledgeLevel": "intermediario",
+        "lossTolerancy": "media",
+        "riskProfile": "moderado",
+        "investmentHorizon": "medio",
+        "objectives": ["aposentadoria", "renda_extra"],
+        "investments": [
+            { "id": 2, "name": "Tesouro IPCA+ 2035", "type": "tesouro", "expectedReturn": 6.5 },
+            { "id": 14, "name": "CDB Liquidez 120% CDI", "type": "cdb", "expectedReturn": 13.2 },
+            { "id": 15, "name": "Fundo Imobiliário KNRI11", "type": "fundo", "expectedReturn": 12.0 },
+            { "id": 10, "name": "ETF BOVA11 (Ibovespa)", "type": "acao", "expectedReturn": 18.0 }
+        ]
+    }
+]

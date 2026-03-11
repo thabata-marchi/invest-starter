@@ -1,0 +1,26 @@
+<div class="col-md-3">
+    <div class="card product-card">
+        <div class="card-body">
+            <span class="badge bg-{{typeColor}} mb-2">{{type}}</span>
+            <span class="badge bg-{{complexityColor}} mb-2">{{complexityLabel}}</span>
+            <h5 class="card-title">{{name}}</h5>
+            <p class="card-text">
+                <strong>Return:</strong> {{expectedReturn}}% p.a.<br>
+                <strong>Risk:</strong> {{riskLabel}}<br>
+                <strong>Liquidity:</strong> D+{{liquidity}}<br>
+                <strong>Minimum:</strong> R$ {{minimumInvestment}}<br>
+            </p>
+            <div class="educational-tip mb-2">
+                <small class="text-muted"><i class="bi bi-lightbulb"></i> {{educationalTip}}</small>
+            </div>
+            <div class="product-badges mb-2">{{badgesHtml}}</div>
+            <div class="score-bar mb-2" style="display:{{scoreDisplay}}">
+                <div class="score-fill" style="width:{{scorePercent}}%"></div>
+                <span class="score-label">{{scorePercent}}% match</span>
+            </div>
+            <button class="btn btn-primary invest-btn" data-product='{{product}}'>
+                <i class="bi bi-wallet2"></i> Invest
+            </button>
+        </div>
+    </div>
+</div>

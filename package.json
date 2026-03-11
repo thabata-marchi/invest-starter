@@ -1,0 +1,21 @@
+{
+    "name": "meu-primeiro-investimento",
+    "version": "1.0.0",
+    "description": "Investment recommendation system for beginners using TensorFlow.js and ChromaDB",
+    "type": "module",
+    "scripts": {
+        "start": "concurrently \"browser-sync -w . --server --files 'index.html, data/*.json, src/**/*.js' --port 3000\" \"node server/server.js\"",
+        "dev": "browser-sync -w . --server --files 'index.html, data/*.json, src/**/*.js' --port 3000",
+        "server": "node server/server.js",
+        "process-data": "node scripts/process-kaggle-data.js"
+    },
+    "devDependencies": {
+        "browser-sync": "^3.0.4",
+        "concurrently": "^8.2.0"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "cors": "^2.8.5",
+        "chromadb": "^1.7.0"
+    }
+}

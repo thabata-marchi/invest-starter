@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Investment - Recommender for Beginners</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1><i class="bi bi-piggy-bank"></i>Invest Starter</h1>
+        <p class="subtitle text-muted">Smart recommender for those who are starting to invest</p>
+
+        <div class="row mt-3">
+            <div class="col-md-5">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h4><i class="bi bi-person-circle"></i> Investor Profile</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="investorForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="investorSelect" class="form-label">Select Investor</label>
+                                    <select class="form-select" id="investorSelect">
+                                        <option value="">-- Select --</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="investorAge" class="form-label">Age</label>
+                                    <input type="text" class="form-control" id="investorAge" disabled>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="investorIncome" class="form-label">Income</label>
+                                    <input type="text" class="form-control" id="investorIncome" disabled>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 mb-2">
+                                    <label class="form-label">Knowledge</label>
+                                    <div id="investorKnowledge"></div>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label class="form-label">Risk Profile</label>
+                                    <div id="investorRisk"></div>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label class="form-label">Horizon</label>
+                                    <div id="investorHorizon"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label">Objectives</label>
+                                <div id="investorObjectives"></div>
+                            </div>
+                        </form>
+
+                        <div id="pastInvestmentsContainer" class="mt-3">
+                            <h5><i class="bi bi-wallet2"></i> Current Investments</h5>
+                            <div id="pastInvestmentsList" class="row"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h4><i class="bi bi-cpu"></i> Recommendation Model</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="model-controls d-flex gap-2 align-items-center">
+                                <button id="trainModelBtn" class="btn btn-primary train-model-btn">
+                                    <i class="bi bi-cpu"></i> Train Model
+                                </button>
+                                <button disabled id="runRecommendationBtn" class="btn btn-success train-model-btn">
+                                    <i class="bi bi-stars"></i> Recommend
+                                </button>
+                                <span id="chromaStatus" class="chroma-status offline" title="ChromaDB offline"></span>
+                            </div>
+                        </div>
+
+                        <div class="all-investors-data mt-3">
+                            <h5 id="investmentsDiv" style="cursor: pointer;">
+                                All Investors Data
+                                <i id="investmentsArrow" class="bi bi-chevron-down"></i>
+                            </h5>
+                            <div id="allInvestorsList" class="investor-data-list overflow-auto"
+                                style="max-height: 400px; display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card mb-4 card-chroma">
+                    <div class="card-header">
+                        <h4><i class="bi bi-database"></i> ChromaDB</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted small">
+                            Vector database for similarity search.
+                            After training, investor and product vectors are saved to ChromaDB.
+                            On recommend, it queries the 100 most similar investors before running the model.
+                        </p>
+                        <div class="chroma-info">
+                            <code>docker run -p 8000:8000 chromadb/chroma</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-2"><i class="bi bi-graph-up-arrow"></i> Financial Products</h3>
+        <div class="row" id="productList">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.5.1/dist/tfjs-vis.umd.min.js"></script>
+    <script type="module" src="./src/index.js"></script>
+</body>
+
+</html>

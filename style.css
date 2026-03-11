@@ -1,0 +1,172 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #f5f7f5;
+}
+
+.main {
+    padding: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2e7d32;
+}
+
+.subtitle {
+    font-size: 1.1em;
+}
+
+.card-header {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.card-header h4 {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.card-chroma .card-header {
+    background-color: #1565c0;
+}
+
+.chroma-info {
+    background-color: #f5f5f5;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.chroma-info code {
+    font-size: 0.8em;
+    color: #333;
+}
+
+.product-card {
+    margin-bottom: 20px;
+    height: 100%;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.past-investment {
+    background-color: #f8f9fa;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border-left: 3px solid #2e7d32;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.past-investment:hover {
+    background-color: #f8d7da;
+    border-left: 3px solid #dc3545;
+}
+
+.past-investment-highlight {
+    background-color: #d4edda;
+    border-left: 3px solid #28a745;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.invest-btn {
+    margin-top: auto;
+}
+
+#productList .col-md-3 {
+    margin-bottom: 20px;
+}
+
+.investor-data-summary {
+    border-bottom: 1px solid #dee2e6;
+    padding: 8px 0;
+}
+
+.investor-data-summary:last-child {
+    border-bottom: none;
+}
+
+.model-controls {
+    margin-bottom: 20px;
+}
+
+.train-model-btn {
+    margin-right: 10px;
+}
+
+.training-status {
+    display: none;
+    margin-top: 10px;
+}
+
+.training-progress {
+    height: 5px;
+}
+
+.investor-data-list {
+    transition: max-height 0.3s ease;
+}
+
+.educational-tip {
+    background-color: #fff9e6;
+    border-radius: 4px;
+    padding: 6px 8px;
+    border-left: 3px solid #ffc107;
+}
+
+.badge-sm {
+    font-size: 0.7em;
+}
+
+.score-bar {
+    position: relative;
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.score-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #66bb6a, #2e7d32);
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.score-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #333;
+}
+
+.chroma-status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.chroma-status.synced {
+    background-color: #2e7d32;
+    box-shadow: 0 0 6px #2e7d32;
+}
+
+.chroma-status.offline {
+    background-color: #bdbdbd;
+}
